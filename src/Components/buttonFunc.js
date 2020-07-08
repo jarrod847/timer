@@ -1,5 +1,5 @@
 import React from "react";
-export const button = (active, toggle) => {
+const button = (active, toggle) => {
   if (active) {
     return (
       <button onClick={toggle} style={{ background: "red" }}>
@@ -14,3 +14,5 @@ export const button = (active, toggle) => {
     );
   }
 };
+
+export default button;

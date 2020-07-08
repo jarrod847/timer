@@ -59,11 +59,21 @@ const Timer = ({ button, active, setActive }) => {
         <form id="inputs">
           <label>
             Min :
-            <input name="input" defaultValue="" onChange={changeMin} />
+            <input
+              name="min"
+              defaultValue=""
+              value={time.min}
+              onChange={changeMin}
+            />
           </label>
           <label>
             Sec :
-            <input name="input" defaultValue="" onChange={changeSec} />
+            <input
+              name="seconds"
+              defaultValue=""
+              value={time.seconds}
+              onChange={changeSec}
+            />
           </label>
         </form>
         <div className="button">{button()}</div>

@@ -7,7 +7,7 @@ const StopWatch = ({ button, active, clearInputs }) => {
     let watch = setInterval(() => {
       if (active) {
         setSeconds(seconds + 1);
-        if (seconds === 5) {
+        if (seconds === 59) {
           setMin(min + 1);
           setSeconds(0);
         }
