@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.switch {
+  text-decoration: underline;
+}
+
+.switch:hover {
+  color: #393e46;
+}
+
+.timer {
+  border: solid 5px #393e46;
+  width: 35%;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #eeeeee;
+  .time {
+    color: black;
+  }
+  label {
+    margin: 0 2%;
+  }
+  button {
+    margin: 2%;
+    width: 75px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 3px solid #222831;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+  button.click {
+    border: none;
+  }
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+.stopWatchButtons {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
