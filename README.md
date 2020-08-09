@@ -4,6 +4,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `docker-compose up -d`
+
+Starts the application, running on the port specified in `port:` block in docker-compose.yaml
+
+### `docker-compose up -f docker-compose.prod.yaml`
+To run a 'prod' version, where the built files are served by nginx.
+
+### `docker-compose build`
+
+After making changes, you need to rebuild the image.
+
+### `docker-compose down && docker-compose up -d`
+
+restart the deployment
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
@@ -66,3 +81,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
