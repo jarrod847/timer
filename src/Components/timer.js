@@ -49,6 +49,8 @@ const Timer = ({ button, active, setActive }) => {
     };
   }, [min, seconds, active]);
 
+  console.log(seconds);
+
   return (
     <div className="App">
       <h1>Timer</h1>
@@ -59,21 +61,11 @@ const Timer = ({ button, active, setActive }) => {
         <form id="inputs">
           <label>
             Min :
-            <input
-              name="min"
-              defaultValue=""
-              value={time.min}
-              onChange={changeMin}
-            />
+            <input name="min" defaultValue="" onChange={changeMin} />
           </label>
           <label>
             Sec :
-            <input
-              name="seconds"
-              defaultValue=""
-              value={time.seconds}
-              onChange={changeSec}
-            />
+            <input name="seconds" defaultValue="" onChange={changeSec} />
           </label>
         </form>
         <div className="button">{button()}</div>
